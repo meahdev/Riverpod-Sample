@@ -6,13 +6,10 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../domain/core/error_handler.dart';
 
+///implemented by AsyncNotifierProvider
 final homeNotifierProvider = AsyncNotifierProvider<HomeController, List<Results>>(() {
   return HomeController();
 });
-
-
-
-
 class HomeController extends AsyncNotifier<List<Results>>{
   @override
   FutureOr<List<Results>> build() {

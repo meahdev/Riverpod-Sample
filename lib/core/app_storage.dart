@@ -1,5 +1,6 @@
 import 'package:shared_preferences/shared_preferences.dart';
 
+/// App-storage class with singleton pattern
 class AppStorage {
   final _login = 'login';
 

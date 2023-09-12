@@ -9,10 +9,14 @@ import 'package:dio/dio.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 
+/// providing loginRepositoryProvider which will globally available
+
 final loginRepositoryProvider = Provider<LoginRepository>((ref) {
   final apiClient = ref.read(apiClientProvider);
   return LoginRepository(apiClient);
 });
+
+/// implementing Login api response
 
 class LoginRepository implements ILoginRepo{
   final ApiClient apiClient;

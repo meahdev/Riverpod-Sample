@@ -9,9 +9,11 @@ import 'package:pretty_dio_logger/pretty_dio_logger.dart';
 import 'package:retrofit/http.dart';
 part 'api_client.g.dart';
 
+/// providing apiClientProvider which will globally available
 
 final apiClientProvider = Provider<ApiClient>((ref) =>ApiClient());
 
+///Retrofit request api class
 @RestApi(baseUrl: "https://randomuser.me")
 abstract class ApiClient {
 

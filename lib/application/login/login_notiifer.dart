@@ -9,6 +9,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 
 
+/// implemented using state notifier
 final loginNotifierProvider = StateNotifierProvider<LoginNotifier,LoginState>((ref) => LoginNotifier());
 
 class LoginNotifier extends StateNotifier<LoginState> {

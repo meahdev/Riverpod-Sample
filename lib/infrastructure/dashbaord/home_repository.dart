@@ -10,10 +10,13 @@ import '../../domain/dashbaord/i_home_repo.dart';
 import '../../domain/dashbaord/model/home_response.dart';
 
 
+/// providing homeRepositoryProvider which will globally available
 final homeRepositoryProvider = Provider<HomeRepository>((ref) {
   final apiClient = ref.read(apiClientProvider);
   return HomeRepository(apiClient);
 });
+
+/// implementing Home api response
 class HomeRepository implements IHomeRepo{
   ApiClient apiClient ;
 

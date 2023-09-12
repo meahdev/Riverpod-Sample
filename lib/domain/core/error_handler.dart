@@ -3,6 +3,7 @@ import 'package:api_sample/core/enum.dart';
 import 'package:dio/dio.dart';
 import 'package:flutter/foundation.dart';
 
+/// dio error handler
 class ErrorHandler implements Exception {
   String _errorMessage = "";
 
